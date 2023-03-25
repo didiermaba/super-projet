@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&B photographies -Contact</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/nb.css">
+    <script src="simple.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="images/layout/nb_logo.svg" alt="logo NB" id="logoImg">
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="galleries.html">galleries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">A propos</a></li>
+            </ul>
+
+        </nav>
+
+        <button id="menuToggle" class="hamburger">&nbsp;</button>
+    </header>
+
+    <section id="pageContent">
+      <main>
+        <h1>Contactez-nous</h1>
+        <p>Merci de completer le formulaire suivant pour nous contacter. Tous les champs de ce formulaire sont requis</p>
+        <form action="merci.html" id="frmContact" novalidate>
+            <div id="leftCol">
+                <div>
+                    <label for="fName">Prénom</label>
+                    <input type="text" name="fName" id="fName" required title=" Votre prénom est une information requise">
+                </div>
+                <div>
+                    <label for="uName">Nom de Famille</label>
+                    <input type="text" name="uName" id="uName" required>
+                </div>
+                <div>
+                    <label for="eMail">Adresse e-mail</label>
+                    <input type="text" name="eMail" id="eMail" required>
+                </div>
+            </div>
+            <div id="rightCol">
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+      </main>  
+    </section>
+    <footer id="mainFooter">
+        <p>&copy; copyright Maba WebStudio-2023</p>
+    </footer>
+    
+</body>
+</html>
